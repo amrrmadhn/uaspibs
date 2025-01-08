@@ -42,3 +42,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signup'])) {
     }
 }
 ?>
+
+<html>
+ <head>
+  <title>MBKM UPJ | Sign Up</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+
+     </head>
+ <body>
+  <div class="container">
+   <div class="left">
+    <img alt="Kampus Merdeka Logo" height="100" src="path_to_your_logo.jpg" width="200"/>
+    <h1>Merdeka Belajar - Kampus Merdeka</h1>
+    <p>Universitas Pembangunan Jaya</p>
+   </div>
+   <div class="right">
+    <h2>Selamat Datang!</h2>
+    <p>Silahkan daftar untuk membuat akun dan masuk ke dalam Sistem MBKM</p>
+    <?php if (isset($error_message)): ?>
+        <p style="color: red;"><?php echo $error_message; ?></p>
+    <?php endif; ?>
+
+    <form method="post" action="">
+        <input placeholder="Nama Depan" type="text" name="first_name" required/>
+        <input placeholder="Nama Belakang" type="text" name="last_name" required/>
+        <input placeholder="NIP/NIM/Email" type="text" name="nip_nim_email" required/>
+        <input placeholder="Password" type="password" name="password" required/>
+        <input placeholder="Confirm Password" type="password" name="confirm_password" required/>
+        <button type="submit" name="signup">Sign Up</button>
+    </form>
+
+    <div class="signup">
+     <p>Sudah punya akun? <a href="login.php">Login</a></p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
