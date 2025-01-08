@@ -127,7 +127,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
         background-color:rgb(62, 65, 255);
         color: white;
         border: none;
-        border-radius: 0px; /* Mengubah border-radius menjadi 0 untuk sudut lancip */
+        border-radius: 0px;
         font-size: 16px;
         cursor: pointer;
         margin-bottom: 20px;
@@ -148,3 +148,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
     }
   </style>
  </head>
+<div class="container">
+<div class="right">
+    <h2>Selamat Datang!</h2>
+    <p>Silahkan login agar dapat masuk ke dalam Sistem MBKM</p>
+    <form method="POST">
+        <input placeholder="Email" type="text" name="nip_nim_email" required />
+        <input placeholder="Password" type="password" name="password" required />
+        <div class="login-options">
+            <div>
+                <input id="remember-me" type="checkbox" name="remember-me" />
+                <label for="remember-me">Remember me</label>
+            </div>
+            <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" name="login">Login</button>
+    </form>
+    <?php 
+    if (isset($error_message)) {
+        echo "<p style='color:red;'>$error_message</p>";
+    } 
+    ?>
+    <div class="signup">
+     <p>Belum punya akun? <a href="signup.php">Sign Up</a></p>
+     <p>Kembali ke Beranda? <a href="index.html">Home</a></p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
