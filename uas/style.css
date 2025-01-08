@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.left {
+    background-color: #0033a0;
+    color: white;
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left img {
+    width: 80%;
+    margin-bottom: 20px;
+}
+.left h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.left p {
+    font-size: 16px;
+}
+.right {
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.right p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.right input[type="text"],
+.right input[type="password"],
+.right input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.right button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0033a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.right button:hover {
+    background-color: #002080;
+}
+.right .login, .right .signup {
+    text-align: center;
+}
+.right .login a, .right .signup a {
+    color: #0033a0;
+    text-decoration: none;
+}
+.right .login a:hover, .right .signup a:hover {
+    text-decoration: underline;
+}
