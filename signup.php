@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signup'])) {
   <title>MBKM UPJ | Sign Up</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 
-     <style>
+  <style>
     body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signup'])) {
         font-size: 16px;
     }
     .right {
-        padding: 40px;
+        padding: 400px;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -152,15 +152,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signup'])) {
         text-decoration: underline;
     }
     </style>
-
-     </head>
+ </head>
  <body>
   <div class="container">
-   <div class="left">
+   <!-- <div class="left">
     <img alt="Kampus Merdeka Logo" height="100" src="path_to_your_logo.jpg" width="200"/>
     <h1>Merdeka Belajar - Kampus Merdeka</h1>
     <p>Universitas Pembangunan Jaya</p>
-   </div>
+   </div> -->
    <div class="right">
     <h2>Selamat Datang!</h2>
     <p>Silahkan daftar untuk membuat akun dan masuk ke dalam Sistem MBKM</p>
