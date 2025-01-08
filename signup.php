@@ -178,6 +178,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signup'])) {
 
     <div class="signup">
      <p>Sudah punya akun? <a href="login.php">Login</a></p>
+     <p>Kembali ke Beranda? <a href="index.html">Home</a></p>
     </div>
    </div>
   </div>
