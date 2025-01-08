@@ -2,19 +2,19 @@
 session_start();
 require_once 'admin_functions.php';
 
-// Debug connection
-try {
-    // Tambahkan ini di awal file untuk debug
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
+// // Debug connection
+// try {
+//     // Tambahkan ini di awal file untuk debug
+//     error_reporting(E_ALL);
+//     ini_set('display_errors', 1);
     
-    // Test database connection
-    $test = $pdo->query('SELECT 1');
-    error_log("Database connection successful");
-} catch (PDOException $e) {
-    error_log("Connection failed: " . $e->getMessage());
-    die("Connection failed: " . $e->getMessage());
-}
+//     // Test database connection
+//     $test = $pdo->query('SELECT 1');
+//     error_log("Database connection successful");
+// } catch (PDOException $e) {
+//     error_log("Connection failed: " . $e->getMessage());
+//     die("Connection failed: " . $e->getMessage());
+// }
 
 // Check if admin is logged in
 if (!isset($_SESSION['admin_logged_in'])) {
@@ -242,11 +242,11 @@ try {
         
         <div class="card">
             <h2>Submission Management</h2>
-            <!-- Add debug info -->
+<!--             Add debug info
             <div class="debug-info" style="background: #f8f9fa; padding: 10px; margin-bottom: 10px;">
                 <p>PDO Connection Status: <?php echo $pdo ? 'Connected' : 'Not Connected'; ?></p>
                 <p>Number of Submissions: <?php echo count($submissions); ?></p>
-            </div>
+            </div> -->
             
             <div class="table-container">
                 <table>
